@@ -3,7 +3,7 @@ import requests
 def buscar_cep (cep):
     cep = cep.strip().replace('.','').replace(' ','').replace('-','')
     if len(cep) != 8 or not cep.isdigit():
-        return 'Cep inválido'
+        return 'Cep não encontrado'
         
     else:
     
